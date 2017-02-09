@@ -36,6 +36,7 @@
 </head>
 <body>
 <!--我愛你  -->
+<!--傻逼  -->
 	<div class="wrap">
 		<center>
 			<div class="b_top">
