@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"  >
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <title>CMS管理系统UI框架v1.0_登录</title>
+    <link href="css/CommonStyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/PubilcStyle.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.7.js"></script>
+    <script src="js/changerows.js"></script>
+    <script>
+        $(function () {
+            //1.关闭系统消息
+            $(".system_tips .close").click(function () {
+                $(this).parent("p").fadeOut();
+            });
+        })
+    </script>
+</head>
+<body>
+    <center>
+    <!--allwidth -->
+        <div class="allwidth home">
+            <div class="nav_bar">
+                系统 / <span>我的桌面</span>
+                <div class="right_info">这是您231次登录，上次登录：2013-12-23 11:13:01</div>
+            </div>
+            <!--系统提醒-->
+            <div class="system_tips">
+                <p class="tip_red">产品目标一定要和产品侧讨论确定，不要理所当然的给出判断。<a class="close" title="关闭">x</a></p>
+                <p class="tip_green">清晰产品目标后，我们需要对用户在产品上的行为有个了解，才能知道他们需要什么。<a class="close" title="关闭">x</a></p>
+            </div>
+            <!--/系统提醒-->
+            <!--待办事项-->
+            <div class="round_box">
+                <div class="title">待办事项</div>
+                <div class="bottom quick_button">
+                    <a href="#">
+                    <dl><em>12</em>
+                        <dt><img src="images/quick_ico1.png" /></dt>
+                        <dd>快捷方式</dd>
+                    </dl>
+                    </a>
+                    <a href="#">
+                    <dl><em>5</em>
+                        <dt><img src="images/quick_ico2.png" /></dt>
+                        <dd>快捷方式</dd>
+                    </dl>
+                    </a>
+                    <a href="#">
+                    <dl><em>5</em>
+                        <dt><img src="images/quick_ico3.png" /></dt>
+                        <dd>快捷方式</dd>
+                    </dl>
+                    </a>
+                    
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <!--/待办事项-->
+            <!--系统消息-->
+            <div class="round_box">
+                <div class="title">系统消息<a href="#" class="more" title="查看更多">更多</a></div>
+                <div class="bottom">
+                    <table width="100%">
+                        <colgroup>
+                            <col width="10%"/><col width=auto/><col width="30%"/>
+                        </colgroup>
+                        <tr>
+                            <th>等级</th><th>事件标题</th><th>日期</th>
+                        </tr>
+                        <tr>
+                            <td class="color_red"><b>紧急</b></td><td class="align_l"><a href="#">排版计划制定、排版计划修订、巡检数据导入</a></td><td class="color_gray">2013-11-08 15:36</td>
+                        </tr>
+                        <tr>
+                            <td class="color_yellow"><b>重要</b></td><td class="align_l"><a href="#">排版计划制定、排版计划修订、巡检数据导入</a></td><td class="color_gray">2013-11-08 15:36</td>
+                        </tr>
+                        <tr>
+                            <td class="color_blue"><b>一般</b></td><td class="align_l"><a href="#">排版计划制定、排版计划修订、巡检数据导入</a></td><td class="color_gray">2013-11-08 15:36</td>
+                        </tr>
+                        <tr>
+                            <td class="color_blue"><b>一般</b></td><td class="align_l"><a href="#">排版计划制定、排版计划修订、巡检数据导入</a></td><td class="color_gray">2013-11-08 15:36</td>
+                        </tr>
+                        <tr>
+                            <td class="color_blue"><b>一般</b></td><td class="align_l"><a href="#">排版计划制定、排版计划修订、巡检数据导入</a></td><td class="color_gray">2013-11-08 15:36</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--/系统消息-->
+            <!--通知公告-->
+            <div class="round_box">
+                <div class="title">通知公告<a href="#" class="more" title="查看更多">更多</a></div>
+                <div class="bottom">
+                    <table width="100%">
+                        <colgroup>
+                            <col width=auto/><col width="30%"/>
+                        </colgroup>
+                        <tr>
+                            <th>标题</th><th>日期</th>
+                        </tr>
+                        <tr>
+                            <td class="align_l"><img src="images/home_laba_red.gif" /><a href="#">排版计划制定、排版计划修订、巡检数据导入</a></td><td class="color_gray">2013-11-08 15:36</td>
+                        </tr>
+                        <tr>
+                            <td class="align_l"><img src="images/home_laba_red.gif" /><a href="#">排版计划制定、排版计划修订、巡检数据导入</a></td><td class="color_gray">2013-11-08 15:36</td>
+                        </tr>
+                        <tr>
+                            <td class="align_l"><img src="images/home_laba_red.gif" /><a href="#">排版计划制定、排版计划修订、巡检数据导入</a></td><td class="color_gray">2013-11-08 15:36</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--/通知公告-->
+            <!--发文经办审批-->
+            <div class="round_box">
+                <div class="title">发文经办审批<a href="#" class="more" title="查看更多">更多</a></div>
+                <div class="bottom">
+                    <table width="100%">
+                        <colgroup>
+                            <col width=auto/><col width="30%"/>
+                        </colgroup>
+                        <tr>
+                            <th>标题</th><th>日期</th>
+                        </tr>
+                        <tr>
+                            <td class="align_l"><img src="images/home_txt.gif" /><a href="#">排版计划制定、排版计划修订、巡检数据导入</a></td><td class="color_gray">2013-11-08 15:36</td>
+                        </tr>
+                        <tr>
+                            <td class="align_l"><img src="images/home_txt.gif" /><a href="#">排版计划制定、排版计划修订、巡检数据导入</a></td><td class="color_gray">2013-11-08 15:36</td>
+                        </tr>
+                        <tr>
+                            <td class="align_l"><img src="images/home_txt.gif" /><a href="#">排版计划制定、排版计划修订、巡检数据导入</a></td><td class="color_gray">2013-11-08 15:36</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--/发文经办审批-->
+            <!--发文待办审批-->
+            <div class="round_box">
+                <div class="title">发文待办审批<a href="#" class="more" title="查看更多">更多</a></div>
+                <div class="bottom">
+                    <table width="100%">
+                        <colgroup>
+                            <col width=auto/><col width="30%"/>
+                        </colgroup>
+                        <tr>
+                            <th>标题</th><th>日期</th>
+                        </tr>
+                        <tr>
+                            <td class="align_l"><img src="images/home_txt.gif" /><a href="#">排版计划制定、排版计划修订、巡检数据导入</a></td><td class="color_gray">2013-11-08 15:36</td>
+                        </tr>
+                        <tr>
+                            <td class="align_l"><img src="images/home_txt.gif" /><a href="#">排版计划制定、排版计划修订、巡检数据导入</a></td><td class="color_gray">2013-11-08 15:36</td>
+                        </tr>
+                        <tr>
+                            <td class="align_l"><img src="images/home_txt.gif" /><a href="#">排版计划制定、排版计划修订、巡检数据导入</a></td><td class="color_gray">2013-11-08 15:36</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--/发文待办审批-->
+        </div>  
+    <!--/allwidth -->
+    </center>
+
+</body>
+</html>

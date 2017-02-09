@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<!-- 配置为开发模式 -->
+	<constant value="true" name="struts.devMode" />
+	<!-- 把扩展名配置为action -->
+	<!-- <constant value="action" name="struts.action.extension"/> -->
+	<!-- 把主题配置为simple -->
+	<constant value="simple" name="struts.ui.theme" />
+	<!-- <constant name="struts.i18n.encoding" value="utf-8"></constant> -->
+	<!-- <package name="registration" extends="struts-default"> -->
+	<package name="default" extends="struts-default" namespace="/">
+		<!-- user -->
+		<!-- <interceptors>
+    		声明拦截器
+    		<interceptor name="checkPrivilege" class="com.bjsxt.registration.config.CheckPrivilegeInterceptor"></interceptor>
+    		
+    		重新定义默认的拦截器栈
+    		<interceptor-stack name="defaultStack">
+    			<interceptor-ref name="checkPrivilege"></interceptor-ref>
+    			<interceptor-ref name="defaultStack"></interceptor-ref>
+    		</interceptor-stack>
+    	</interceptors> -->
+		
+		<global-results>
+			<result name="loginUI">/admin/login.html</result>
+			<result name="invoke">/noPrivilegeError.jsp</result>
+		</global-results>
+		
+		<!-- 网站 -->
+		<action name="articleTxt_*" class="articleTxtAction"
+			method="{1}">
+			<result name="findAll">index.jsp</result>
+			<result name="findById">articleList.jsp</result>
+		</action>
+		<!-- <action name="articleTxtFindById" class="com.bjsxt.registration.action.ArticleTxtAction"
+			method="findById">
+		</action> -->
+	</package>
+	<package name="admin" namespace="/admin" extends="default">
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="login">/admin/index.jsp</result>
+			<result name="loginui">/admin/login.html</result>
+			<result name="findAll">/admin/userlist.jsp</result>
+			<result name="registui">/admin/userlist.jsp</result>
+			<result name="regist">/admin/userlist.jsp</result>
+		</action>
+		<!--后台 -->
+		<action name="articleTxt_*" class="articleTxtAction" method="{1}">
+			<result name="list">/admin/articleShow.jsp</result>
+			<result name="saveLast">/admin/articleAdd.jsp</result>
+			<result name="save" type="redirectAction">articleTxt_list</result>
+			<result name="updateui">articleUpdate.jsp</result>
+			<result name="update" type="redirectAction">articleTxt_list</result>
+			<result name="delete" type="redirectAction">articleTxt_list</result>
+		</action>
+		<!--栏目 -->
+		<action name="articleType_*" class="articleTypeAction" method="{1}">
+			<result name="save" type="redirectAction">articleType_findAll</result>
+			<result name="delete" type="redirectAction">articleType_findAll</result>
+			<result name="findAll">/admin/articleTypeShow.jsp</result>
+			<result name="updateui">/admin/articleTypeAdd.jsp</result>
+			<result name="update" type="redirectAction">articleType_findAll</result>
+		</action>
+	</package>
+	
+</struts>
+	

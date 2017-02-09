@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"  >
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <title>CMS管理系统UI框架v1.0_登录</title>
+    <link href="css/CommonStyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/PubilcStyle.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.7.js"></script>
+    <script src="js/changerows.js"></script>
+</head>
+<body>
+    <center>
+    <!--allwidth -->
+        <div class="allwidth">
+            <div class="nav_bar">
+                <a href="index.html">主页</a> / <a href="列表.html">列表页</a> / <span>列表样式</span>
+                <div class="right_info">启用<span class="color_green"> 154 </span> 禁用<span class="color_red"> 23 </span> 审核<span class="color_taupe"> 9 </span></div>
+            </div>
+            <!--列表-->
+            <div class="list_div">
+                <!--操作-->
+                <div class="operation_div">
+                    <div class="f_left">
+                        列表样式A
+                        <!--<form>
+                        <input type="text" class="txt_box" /> <input type="button" class="btn_search" value="搜 索" />
+                        </form>-->
+                    </div>
+                    <div class="f_right"><a href="#" class="btn_add">新增人员</a><a href="#" class="btn_ok">启用所选</a><a href="#" class="btn_del">删除所选</a></div>
+                    <div class="clear"></div>
+                </div>
+                <!--/操作-->
+                <table border="0" cellspacing="0" class="mrTable" id="list">
+                <tr>
+                <th style="width: 5%;"><input type="checkbox" onclick="GetAllCheckBox(this)" /></th>
+                <th style="width: 8%;">人员</th>
+                <th style="width: auto;">管理范围</th>
+                <th style="width: 20%;">日期</th>
+                <th style="width: 8%;">状态</th>
+                <th align="center" style="width: 29%;">操作</th>
+            </tr>
+            <tr><td><input type="checkbox" /></td>
+                <td>
+                    李逸尘
+                </td>
+                <td class="align_l">
+                    排版计划制定、排版计划修订、巡检数据导入
+                </td>
+                <td class="color_gray">
+                    2013-11-08 15:36
+                </td>
+                <td>
+                    <span class="circular_green" title="启用"></span>
+                </td>
+                <td align="center">
+                    <a href="#" class="btn_small_ok" title="ok"></a>
+                    <a href="#" class="btn_small_update" title="修改"></a>
+                    <a href="#" class="btn_small_del" title="删除"></a>
+                    <a href="#" class="btn_small_tool" title="工具"></a>
+                </td>
+            </tr>
+            <tr><td><input type="checkbox" /></td>
+                <td>
+                    李逸尘
+                </td>
+                <td class="align_l">
+                    排版计划制定、排版计划修订、巡检数据导入
+                </td>
+                <td class="color_gray">
+                    2013-11-08 15:36
+                </td>
+                <td>
+                    <span class="circular_red" title="停用"></span>
+                </td>
+                <td align="center">
+                    <a href="#" class="btn_small_ok" title="ok"></a>
+                    <a href="#" class="btn_small_update" title="修改"></a>
+                    <a href="#" class="btn_small_del" title="删除"></a>
+                    <a href="#" class="btn_small_tool" title="工具"></a>
+                </td>
+            </tr>
+            <tr><td><input type="checkbox" /></td>
+            <td>
+                李逸尘
+            </td>
+            <td class="align_l">
+                排版计划制定、排版计划修订、巡检数据导入
+            </td>
+            <td class="color_gray">
+                2013-11-08 15:36
+            </td>
+            <td>
+                <span class="circular_red" title="停用"></span>
+            </td>
+            <td align="center">
+                <a href="#" class="btn_small_ok" title="ok"></a>
+                <a href="#" class="btn_small_update" title="修改"></a>
+                <a href="#" class="btn_small_del" title="删除"></a>
+                <a href="#" class="btn_small_tool" title="工具"></a>
+            </td>
+        </tr>
+            </table>
+
+                <!--分页-->
+                <div class="pageList">
+                    <div class="f_left">共1876条&nbsp;&nbsp;当前1-9</div>
+                    <div class="f_right">
+                        <a href="#" title="首页"><<</a><a href="#" title="上一页"><</a><a href="#" title="下一页">></a><a href="#" title="尾页">>></a>
+                        <input type="text" class="pageNumber" />页/共30页 <input type="text" class="pageNumber" />条/页  <input type="button" class="go_page" title="跳转" />
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!--/分页-->
+
+        <script language="javascript">
+            //奇偶行变色senfe("表格名称","奇数行背景f7feff","偶数行背景","鼠标经过背景"--,"点击后背景");
+            senfe("list", "oddColor", "evenColor", "hoverClass");
+        </script>
+    
+            </div>
+            <!--/列表-->
+        </div>  
+    <!--/allwidth -->
+    </center>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <title>CMS管理系统UI框架v1.0_登录</title>
+   
+  <script src="js/WdatePicker.js"></script>
+
+    
+   
+</head>
+<body>
+<!--
+  
+<script src="js/Prompt/ymPrompt_Ex.js"></script>
+ <link href="css/CommonStyle.css" rel="stylesheet" type="text/css" />
+    <link href="js/Prompt/skin/theme/ymPrompt.css" rel="stylesheet" />
+    <link href="css/PubilcStyle.css" rel="stylesheet" type="text/css" />
+-->
+    <center>
+    <!--allwidth -->
+        <div class="allwidth">
+            <div class="nav_bar">
+                <a href="index.html">主页</a> / <a href="列表.html">列表页</a> / <span>表单</span>
+            </div>
+            <!--表单-->
+                <form>
+                    <div class="form">
+                    <div class="top_title">基本表单</div>
+                    <table class="form_table">
+                        <tr>
+                            <td class="td_lable">用户名：<span class="mandatory">*</span></td><td><input type="text"  class="txt_box error" /><span class="error_info">请输入用户名!</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td_lable">密码：<span class="mandatory">*</span></td><td><input type="password"  class="txt_box" /><span class="error_info"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="td_lable">下拉框：<span class="mandatory">*</span></td>
+                            <td><select  class="select">
+                                    <option value="1">Value 1</option>
+                                    <option value="2">Value 2</option>
+                                    <option value="3">Value 3</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_lable">日期：<span class="mandatory">*</span></td>
+                            <td>
+                                <input class="txt_box Wdate" type="text" onClick="WdatePicker()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_lable">多选：<span class="mandatory">*</span></td>
+                            <td>
+                    <input type="checkbox" id="checkbox1" class="checkbox" /><label for="checkbox1">Value 1</label>
+                    &nbsp;&nbsp;
+                    <input type="checkbox" id="checkbox2" class="checkbox" /><label for="checkbox2">Value 2</label>
+                    &nbsp;&nbsp;
+                    <input type="checkbox" id="checkbox3" class="checkbox" /><label for="checkbox3">Value 3</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_lable">单选：<span class="mandatory">*</span></td>
+                            <td>
+                    <input type="radio" id="radio1" name="radio1" class="checkbox" /><label for="radio1">Value 1</label>
+                    &nbsp;&nbsp;
+                    <input type="radio" id="radio2" name="radio1" class="checkbox" /><label for="radio2">Value 2</label>
+                    &nbsp;&nbsp;
+                    <input type="radio" id="radio3" name="radio1" class="checkbox" /><label for="radio3">Value 3</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_lable">上传文件：<span class="mandatory">*</span></td>
+                            <td>
+                                <input type="file" class="txt_box" />(推荐使用其他上传控件)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_lable">备注：<span class="mandatory">*</span></td>
+                            <td>
+                                <textarea id="textarea" class="textarea" ></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                        <div class="btn_group">
+                            <a href="javascript:history.back(-1)" class="btn_goback btn_gray">返回</a>
+                            <input type="button" class="btn_save btn_green" value="保存" />
+                            <input type="button" class="btn_submit btn_blue" value="提交" />
+                        </div>
+                        <div class="btn_group">
+                        <h4>以下为不带图标的纯色按钮：</h4><br />
+                        <a href="javascript:;" class="btn_gray" onClick="ymPrompt.alert({message:'自定义按钮',title:'自定义按钮测试',btn:[['是','yes'],['否','no'],['取消','cancel']]})">点我试试提示框</a>
+                        <a href="#" class="btn_green">返回</a>
+                        <a href="#" class="btn_blue">返回返回</a>
+                        <a href="#" class="btn_red">返回</a>
+                        <a href="#" class="btn_red">长度不限（所有样式不支持杂项文档模式，不支持ie6及以下浏览器查看）</a>
+                        </div>
+                    </div>
+                </form>
+            <!--/表单-->
+        </div>  
+    <!--/allwidth -->
+    </center>
+
+    <!--弹出层 start-->
+
+    <!--弹出层 end-->
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<link href="./css/CommonStyle.css" rel="stylesheet" type="text/css" />
+<link href="./js/Prompt/skin/theme/ymPrompt.css" rel="stylesheet" />
+<script src="./js/My97DatePicker/WdatePicker.js"></script>
+<link href="./css/PubilcStyle.css" rel="stylesheet" type="text/css" />
+<script src="./js/Prompt/ymPrompt_Ex.js"></script>
+<script src="./js/jquery-1.7.js"></script>

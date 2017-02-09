@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>CMS管理系统UI框架v1.0_登录</title>
+    <link href="css/CommonStyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/PubilcStyle.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.7.js"></script>
+    <script>
+        $(function () { 
+            $(".b_body").height($(window).height() - $(".top").height() - $(".foot").height() - 5);
+        })
+        $(window).resize(function () {
+            $(".b_body").height($(window).height() - $(".top").height() - $(".foot").height() - 5);
+        });
+    </script>
+</head>
+<body>
+    <center>
+    <!--allwidth -->
+        <div class="allwidth">
+            <div class="top">
+                <div class="top_info"><span class="bigfont">CMS </span> 管理系统UI框架v1.0</div>
+            </div>
+            <div class="b_body" style="min-height:490px;">
+            <div class="login_bigbox_par">
+            <div class="login_bigbox">
+                <div class="login_box">
+                    <div class="admin/login_title">登录系统</div>
+                    <form action="user_login" method="post">
+                    <p><input type="text" name="username" class="txt_box txt_userName" /></p>
+                    <p><input type="password" name="password" class="txt_box txt_pwd" /></p>
+                    <p><input type="submit" value="登 录" class="btn_blue" /></p>
+                    </form>
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class="foot">
+                &copy;版权归索易公司所有
+            </div>
+        </div>  
+    <!--/allwidth -->
+    </center>
+
+</body>
+</html>

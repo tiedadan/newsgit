@@ -1,0 +1,27 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<link href="./css/CommonStyle.css" rel="stylesheet" type="text/css" />
+<link href="./js/Prompt/skin/theme/ymPrompt.css" rel="stylesheet" />
+<script src="./js/My97DatePicker/WdatePicker.js"></script>
+<link href="./css/PubilcStyle.css" rel="stylesheet" type="text/css" />
+<script src="./js/Prompt/ymPrompt_Ex.js"></script>
+<script src="./js/jquery-1.7.js"></script>
+<div class="head">
+					<div class="logo"></div>
+				</div>
+				<div class="menu">
+					<a href="articleTxtf_findAll.action">网站首页</a><a href="#">工作动态</a><a href="#">分析预测</a><a
+						href="#">市场行情</a><a href="#">粮网期刊</a><a href="#">粮食政策</a><a
+						href="#">法规文件</a><a href="#">仓储管理</a><a href="#">行业知识</a><a
+						href="#">供求信息</a><a href="#">关于我们</a>
+				</div>
+				<div class="b_time mt_10">
+					<label id="Clock"></label>
+					<div class="top_search">
+						<form>
+							<input type="text" /><input type="submit" class="btn_search"
+								value="" />
+						</form>
+					</div>
+				</div>
